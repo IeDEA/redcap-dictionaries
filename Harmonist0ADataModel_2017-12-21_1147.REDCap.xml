@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODM xmlns="http://www.cdisc.org/ns/odm/v1.3" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:redcap="https://projectredcap.org" xsi:schemaLocation="http://www.cdisc.org/ns/odm/v1.3 schema/odm/ODM1-3-1.xsd" ODMVersion="1.3.1" FileOID="000-00-0000" FileType="Snapshot" Description="Harmonist 0A: Data Model (IeDEA-DES)" AsOfDateTime="2017-12-21T11:47:43" CreationDateTime="2017-12-21T11:47:43" SourceSystem="REDCap" SourceSystemVersion="8.1.1">
+<Study OID="Project.Harmonist0ADataModelIeDEADES">
+<GlobalVariables>
+	<StudyName>Harmonist 0A: Data Model (IeDEA-DES)</StudyName>
+	<StudyDescription>This file contains the metadata, events, and data for REDCap project "Harmonist 0A: Data Model (IeDEA-DES)".</StudyDescription>
+	<ProtocolName>Harmonist 0A: Data Model (IeDEA-DES)</ProtocolName>
+	<redcap:RecordAutonumberingEnabled>1</redcap:RecordAutonumberingEnabled>
+	<redcap:CustomRecordLabel>[table_name]</redcap:CustomRecordLabel>
+	<redcap:SecondaryUniqueField></redcap:SecondaryUniqueField>
+	<redcap:SchedulingEnabled>0</redcap:SchedulingEnabled>
+	<redcap:Purpose>4</redcap:Purpose>
+	<redcap:PurposeOther></redcap:PurposeOther>
+	<redcap:ProjectNotes></redcap:ProjectNotes>
+	<redcap:RepeatingInstrumentsAndEvents>
+		<redcap:RepeatingInstruments>
+			<redcap:RepeatingInstrument redcap:UniqueEventName="event_1_arm_1" redcap:RepeatInstrument="variable_metadata" redcap:CustomLabel="[variable_name]"/>
+		</redcap:RepeatingInstruments>
+	</redcap:RepeatingInstrumentsAndEvents>
+</GlobalVariables>
+<MetaDataVersion OID="Metadata.Harmonist0ADataModelIeDEADES_2017-12-21_1147" Name="Harmonist 0A: Data Model (IeDEA-DES)" redcap:RecordIdField="record_id">
+	<FormDef OID="Form.table_metadata" Name="Table Metadata" Repeating="No" redcap:FormName="table_metadata">
+		<ItemGroupRef ItemGroupOID="table_metadata.record_id" Mandatory="No"/>
+		<ItemGroupRef ItemGroupOID="table_metadata.table_name" Mandatory="No"/>
+		<ItemGroupRef ItemGroupOID="table_metadata.table_format" Mandatory="No"/>
+		<ItemGroupRef ItemGroupOID="table_metadata.table_display_y" Mandatory="No"/>
+		<ItemGroupRef ItemGroupOID="table_metadata.table_display_name" Mandatory="No"/>
+		<ItemGroupRef ItemGroupOID="table_metadata.table_status" Mandatory="No"/>
+		<ItemGroupRef ItemGroupOID="table_metadata.table_added_d" Mandatory="No"/>
+		<ItemGroupRef ItemGroupOID="table_metadata.table_metadata_complete" Mandatory="No"/>
+	</FormDef>
+	<FormDef OID="Form.variable_metadata" Name="Variable Metadata" Repeating="No" redcap:FormName="variable_metadata">
+		<ItemGroupRef ItemGroupOID="variable_metadata.variable_name" Mandatory="No"/>
+		<ItemGroupRef ItemGroupOID="variable_metadata.data_format" Mandatory="No"/>
+		<ItemGroupRef ItemGroupOID="variable_metadata.variable_required___1" Mandatory="No"/>
+		<ItemGroupRef ItemGroupOID="variable_metadata.variable_missingaction___1" Mandatory="No"/>
+		<ItemGroupRef ItemGroupOID="variable_metadata.has_codes" Mandatory="No"/>
+		<ItemGroupRef ItemGroupOID="variable_metadata.code_list_ref" Mandatory="No"/>
+		<ItemGroupRef ItemGroupOID="variable_metadata.variable_metadata_complete" Mandatory="No"/>
+	</FormDef>
+	<ItemGroupDef OID="table_metadata.record_id" Name="Table Metadata" Repeating="No">
+		<ItemRef ItemOID="record_id" Mandatory="No" redcap:Variable="record_id"/>
+	</ItemGroupDef>
+	<ItemGroupDef OID="table_metadata.table_name" Name="&lt;div style=&quot;color:white; text-align:center; border: 1px #34495e; background-color: #2c3e50;&quot;&gt;&lt;h3 style=&quot;margin:0px; padding:10px&quot;&gt;Table Definition&lt;/h3&gt;&lt;/div&gt;" Repeating="No">
+		<ItemRef ItemOID="table_name" Mandatory="No" redcap:Variable="table_name"/>
+	</ItemGroupDef>
+	<ItemGroupDef OID="table_metadata.table_format" Name="Table Metadata" Repeating="No">
+		<ItemRef ItemOID="table_format" Mandatory="No" redcap:Variable="table_format"/>
+		<ItemRef ItemOID="table_definition" Mandatory="No" redcap:Variable="table_definition"/>
+	</ItemGroupDef>
+	<ItemGroupDef OID="table_metadata.table_display_y" Name="&lt;div style=&quot;color:white; text-align:center; border: 1px #e67e22; background-color: #d35400;&quot;&gt;&lt;h3 style=&quot;margin:0px; padding:10px&quot;&gt;Display Settings&lt;/h3&gt;&lt;/div&gt;" Repeating="No">
+		<ItemRef ItemOID="table_display_y" Mandatory="No" redcap:Variable="table_display_y"/>
+	</ItemGroupDef>
+	<ItemGroupDef OID="table_metadata.table_display_name" Name="Table Metadata" Repeating="No">
+		<ItemRef ItemOID="table_display_name" Mandatory="No" redcap:Variable="table_display_name"/>
+		<ItemRef ItemOID="table_order" Mandatory="No" redcap:Variable="table_order"/>
+		<ItemRef ItemOID="text_top" Mandatory="No" redcap:Variable="text_top"/>
+		<ItemRef ItemOID="text_bottom" Mandatory="No" redcap:Variable="text_bottom"/>
+	</ItemGroupDef>
+	<ItemGroupDef OID="table_metadata.table_status" Name="Table Status" Repeating="No">
+		<ItemRef ItemOID="table_status" Mandatory="No" redcap:Variable="table_status"/>
+	</ItemGroupDef>
+	<ItemGroupDef OID="table_metadata.table_added_d" Name="Table Metadata" Repeating="No">
+		<ItemRef ItemOID="table_added_d" Mandatory="No" redcap:Variable="table_added_d"/>
+		<ItemRef ItemOID="table_deprecated_d" Mandatory="No" redcap:Variable="table_deprecated_d"/>
+	</ItemGroupDef>
+	<ItemGroupDef OID="table_metadata.table_metadata_complete" Name="Form Status" Repeating="No">
+		<ItemRef ItemOID="table_metadata_complete" Mandatory="No" redcap:Variable="table_metadata_complete"/>
+	</ItemGroupDef>
+	<ItemGroupDef OID="variable_metadata.variable_name" Name="&lt;div style=&quot;color:white; text-align:center; border: 1px #1abc9c; background-color:#16a085;&quot;&gt;&lt;h3 style=&quot;margin:0px; padding:10px&quot;&gt;Variable Definition&lt;/h3&gt;&lt;/div&gt;" Repeating="No">
+		<ItemRef ItemOID="variable_name" Mandatory="No" redcap:Variable="variable_name"/>
+	</ItemGroupDef>
+	<ItemGroupDef OID="variable_metadata.data_format" Name="Variable Metadata" Repeating="No">
+		<ItemRef ItemOID="data_format" Mandatory="No" redcap:Variable="data_format"/>
+		<ItemRef ItemOID="description" Mandatory="No" redcap:Variable="description"/>
+		<ItemRef ItemOID="description_extra" Mandatory="No" redcap:Variable="description_extra"/>
+		<ItemRef ItemOID="variable_order" Mandatory="No" redcap:Variable="variable_order"/>
+	</ItemGroupDef>
+	<ItemGroupDef OID="variable_metadata.variable_required___1" Name="Variable Status" Repeating="No">
+		<ItemRef ItemOID="variable_required___1" Mandatory="No" redcap:Variable="variable_required"/>
+	</ItemGroupDef>
+	<ItemGroupDef OID="variable_metadata.variable_missingaction___1" Name="" Repeating="No">
+		<ItemRef ItemOID="variable_missingaction___1" Mandatory="No" redcap:Variable="variable_missingaction"/>
+		<ItemRef ItemOID="variable_status" Mandatory="No" redcap:Variable="variable_status"/>
+		<ItemRef ItemOID="variable_added_d" Mandatory="No" redcap:Variable="variable_added_d"/>
+		<ItemRef ItemOID="variable_deprecated_d" Mandatory="No" redcap:Variable="variable_deprecated_d"/>
+	</ItemGroupDef>
+	<ItemGroupDef OID="variable_metadata.has_codes" Name="&lt;div style=&quot;color:white; text-align:center; border: 1px #e67e22; background-color: #d35400;&quot;&gt;&lt;h3 style=&quot;margin:0px; padding:10px&quot;&gt;Variable Codes&lt;/h3&gt;&lt;/div&gt;" Repeating="No">
+		<ItemRef ItemOID="has_codes" Mandatory="No" redcap:Variable="has_codes"/>
+	</ItemGroupDef>
+	<ItemGroupDef OID="variable_metadata.code_list_ref" Name="Variable Metadata" Repeating="No">
+		<ItemRef ItemOID="code_list_ref" Mandatory="No" redcap:Variable="code_list_ref"/>
+		<ItemRef ItemOID="code_text" Mandatory="No" redcap:Variable="code_text"/>
+		<ItemRef ItemOID="codes_print" Mandatory="No" redcap:Variable="codes_print"/>
+	</ItemGroupDef>
+	<ItemGroupDef OID="variable_metadata.variable_metadata_complete" Name="Form Status" Repeating="No">
+		<ItemRef ItemOID="variable_metadata_complete" Mandatory="No" redcap:Variable="variable_metadata_complete"/>
+	</ItemGroupDef>
+	<ItemDef OID="record_id" Name="record_id" DataType="text" Length="999" redcap:Variable="record_id" redcap:FieldType="text">
+		<Question><TranslatedText>Record ID</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="table_name" Name="table_name" DataType="text" Length="999" redcap:Variable="table_name" redcap:FieldType="text" redcap:SectionHeader="&lt;div style=&quot;color:white; text-align:center; border: 1px #34495e; background-color: #2c3e50;&quot;&gt;&lt;h3 style=&quot;margin:0px; padding:10px&quot;&gt;Table Definition&lt;/h3&gt;&lt;/div&gt;">
+		<Question><TranslatedText>Table name</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="table_format" Name="table_format" DataType="text" Length="1" redcap:Variable="table_format" redcap:FieldType="radio">
+		<Question><TranslatedText>Table type</TranslatedText></Question>
+		<CodeListRef CodeListOID="table_format.choices"/>
+	</ItemDef>
+	<ItemDef OID="table_definition" Name="table_definition" DataType="text" Length="999" redcap:Variable="table_definition" redcap:FieldType="text">
+		<Question><TranslatedText>Table definition (short text)</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="table_display_y" Name="table_display_y" DataType="boolean" Length="1" redcap:Variable="table_display_y" redcap:FieldType="yesno" redcap:SectionHeader="&lt;div style=&quot;color:white; text-align:center; border: 1px #e67e22; background-color: #d35400;&quot;&gt;&lt;h3 style=&quot;margin:0px; padding:10px&quot;&gt;Display Settings&lt;/h3&gt;&lt;/div&gt;">
+		<Question><TranslatedText>Display this table in human-readable documents and forms?</TranslatedText></Question>
+		<CodeListRef CodeListOID="table_display_y.choices"/>
+	</ItemDef>
+	<ItemDef OID="table_display_name" Name="table_display_name" DataType="text" Length="999" redcap:Variable="table_display_name" redcap:FieldType="text">
+		<Question><TranslatedText>Table display name (for human-readable documents)</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="table_order" Name="table_order" DataType="float" Length="999" SignificantDigits="1" redcap:Variable="table_order" redcap:FieldType="text" redcap:TextValidationType="float" redcap:FieldNote="(e.g., use 1.5 to place a table between tables 1 and 2)" redcap:CustomAlignment="RH">
+		<Question><TranslatedText>Display order for this table </TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="text_top" Name="text_top" DataType="text" Length="999" redcap:Variable="text_top" redcap:FieldType="textarea" redcap:CustomAlignment="LH">
+		<Question><TranslatedText>Text (HTML-formatted) to display before the table definiton</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="text_bottom" Name="text_bottom" DataType="text" Length="999" redcap:Variable="text_bottom" redcap:FieldType="textarea" redcap:CustomAlignment="LH">
+		<Question><TranslatedText>Text (HTML-formatted) to display after the table definition</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="table_status" Name="table_status" DataType="text" Length="1" redcap:Variable="table_status" redcap:FieldType="radio" redcap:SectionHeader="Table Status">
+		<Question><TranslatedText>Table Status</TranslatedText></Question>
+		<CodeListRef CodeListOID="table_status.choices"/>
+	</ItemDef>
+	<ItemDef OID="table_added_d" Name="table_added_d" DataType="date" Length="999" redcap:Variable="table_added_d" redcap:FieldType="text" redcap:TextValidationType="date_ymd">
+		<Question><TranslatedText>Date table added (as draft or active)</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="table_deprecated_d" Name="table_deprecated_d" DataType="date" Length="999" redcap:Variable="table_deprecated_d" redcap:FieldType="text" redcap:TextValidationType="date_ymd" redcap:FieldNote="(approximate, for DES version)" redcap:BranchingLogic="[table_status] = &#039;2&#039;" redcap:CustomAlignment="RH">
+		<Question><TranslatedText>Date of table deprecation</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="table_metadata_complete" Name="table_metadata_complete" DataType="text" Length="1" redcap:Variable="table_metadata_complete" redcap:FieldType="select" redcap:SectionHeader="Form Status">
+		<Question><TranslatedText>Complete?</TranslatedText></Question>
+		<CodeListRef CodeListOID="table_metadata_complete.choices"/>
+	</ItemDef>
+	<ItemDef OID="variable_name" Name="variable_name" DataType="text" Length="999" redcap:Variable="variable_name" redcap:FieldType="text" redcap:SectionHeader="&lt;div style=&quot;color:white; text-align:center; border: 1px #1abc9c; background-color:#16a085;&quot;&gt;&lt;h3 style=&quot;margin:0px; padding:10px&quot;&gt;Variable Definition&lt;/h3&gt;&lt;/div&gt;">
+		<Question><TranslatedText>Variable name</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="data_format" Name="data_format" DataType="text" Length="1" redcap:Variable="data_format" redcap:FieldType="select" redcap:TextValidationType="autocomplete">
+		<Question><TranslatedText>Variable format</TranslatedText></Question>
+		<CodeListRef CodeListOID="data_format.choices"/>
+	</ItemDef>
+	<ItemDef OID="description" Name="description" DataType="text" Length="999" redcap:Variable="description" redcap:FieldType="textarea">
+		<Question><TranslatedText>Variable description</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="description_extra" Name="description_extra" DataType="text" Length="999" redcap:Variable="description_extra" redcap:FieldType="textarea">
+		<Question><TranslatedText>Extra text for variable description (subheader)</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="variable_order" Name="variable_order" DataType="float" Length="999" SignificantDigits="1" redcap:Variable="variable_order" redcap:FieldType="text" redcap:TextValidationType="float" redcap:FieldNote="(e.g., use 1.5 to place a variable between variables 1 and 2)" redcap:CustomAlignment="RH">
+		<Question><TranslatedText>Display order for this variable
+(numbering is within table)</TranslatedText><redcap:FormattedTranslatedText>Display order for this variable
+&lt;span style=&quot;font-weight:lighter&quot;&gt;(numbering is within table)&lt;/span&gt;</redcap:FormattedTranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="variable_required___1" Name="variable_required___1" DataType="boolean" Length="1" redcap:Variable="variable_required" redcap:FieldType="checkbox" redcap:SectionHeader="Variable Status" redcap:CustomAlignment="RH">
+		<Question><TranslatedText>REQUIRED
+(This variable is required for database integrity and should always be included when data from this table is requested.)</TranslatedText><redcap:FormattedTranslatedText>REQUIRED
+&lt;span style=&quot;font-weight:lighter&quot;&gt;(This variable is required for database integrity and should always be included when data from this table is requested.)&lt;/span&gt;</redcap:FormattedTranslatedText></Question>
+		<CodeListRef CodeListOID="variable_required___1.choices"/>
+	</ItemDef>
+	<ItemDef OID="variable_missingaction___1" Name="variable_missingaction___1" DataType="boolean" Length="1" redcap:Variable="variable_missingaction" redcap:FieldType="checkbox" redcap:BranchingLogic="[variable_required(1)] = &#039;&#039;">
+		<Question><TranslatedText>Report missing entries as data quality errors</TranslatedText></Question>
+		<CodeListRef CodeListOID="variable_missingaction___1.choices"/>
+	</ItemDef>
+	<ItemDef OID="variable_status" Name="variable_status" DataType="text" Length="1" redcap:Variable="variable_status" redcap:FieldType="radio">
+		<Question><TranslatedText>Variable Status</TranslatedText></Question>
+		<CodeListRef CodeListOID="variable_status.choices"/>
+	</ItemDef>
+	<ItemDef OID="variable_added_d" Name="variable_added_d" DataType="date" Length="999" redcap:Variable="variable_added_d" redcap:FieldType="text" redcap:TextValidationType="date_ymd">
+		<Question><TranslatedText>Date variable added 
+(as draft or active)</TranslatedText><redcap:FormattedTranslatedText>Date variable added 
+&lt;span style=&quot;font-weight:lighter&quot;&gt;(as draft or active)&lt;/span&gt;</redcap:FormattedTranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="variable_deprecated_d" Name="variable_deprecated_d" DataType="date" Length="999" redcap:Variable="variable_deprecated_d" redcap:FieldType="text" redcap:TextValidationType="date_ymd" redcap:FieldNote="(approximate, for DES version)" redcap:BranchingLogic="[variable_status] = &#039;2&#039;" redcap:CustomAlignment="RH">
+		<Question><TranslatedText>Date of variable deprecation</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="has_codes" Name="has_codes" DataType="boolean" Length="1" redcap:Variable="has_codes" redcap:FieldType="yesno" redcap:SectionHeader="&lt;div style=&quot;color:white; text-align:center; border: 1px #e67e22; background-color: #d35400;&quot;&gt;&lt;h3 style=&quot;margin:0px; padding:10px&quot;&gt;Variable Codes&lt;/h3&gt;&lt;/div&gt;">
+		<Question><TranslatedText>Is this a coded variable?</TranslatedText></Question>
+		<CodeListRef CodeListOID="has_codes.choices"/>
+	</ItemDef>
+	<ItemDef OID="code_list_ref" Name="code_list_ref" DataType="text" Length="2" redcap:Variable="code_list_ref" redcap:FieldType="sql" redcap:BranchingLogic="[has_codes] = &#039;1&#039;">
+		<Question><TranslatedText>Select code list:</TranslatedText></Question>
+		<CodeListRef CodeListOID="code_list_ref.choices"/>
+	</ItemDef>
+	<ItemDef OID="code_text" Name="code_text" DataType="text" Length="999" redcap:Variable="code_text" redcap:FieldType="textarea" redcap:CustomAlignment="LH">
+		<Question><TranslatedText>Extra text to show in &quot;Format&quot;/codes column</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="codes_print" Name="codes_print" DataType="text" Length="1" redcap:Variable="codes_print" redcap:FieldType="radio" redcap:BranchingLogic="[has_codes] = &#039;1&#039;">
+		<Question><TranslatedText>Should code lists be printed for this variable?</TranslatedText></Question>
+		<CodeListRef CodeListOID="codes_print.choices"/>
+	</ItemDef>
+	<ItemDef OID="variable_metadata_complete" Name="variable_metadata_complete" DataType="text" Length="1" redcap:Variable="variable_metadata_complete" redcap:FieldType="select" redcap:SectionHeader="Form Status">
+		<Question><TranslatedText>Complete?</TranslatedText></Question>
+		<CodeListRef CodeListOID="variable_metadata_complete.choices"/>
+	</ItemDef>
+	<CodeList OID="table_format.choices" Name="table_format" DataType="text" redcap:Variable="table_format">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>One row per patient</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="2"><Decode><TranslatedText>Multiple rows per patient</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>N/A (e.g., tblCENTER)</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="table_display_y.choices" Name="table_display_y" DataType="boolean" redcap:Variable="table_display_y">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Yes</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>No</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="table_status.choices" Name="table_status" DataType="text" redcap:Variable="table_status">
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>DRAFT (table under consideration)</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Active</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="2"><Decode><TranslatedText>DEPRECATED (table retired from use)</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="table_metadata_complete.choices" Name="table_metadata_complete" DataType="text" redcap:Variable="table_metadata_complete">
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>Incomplete</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Unverified</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="2"><Decode><TranslatedText>Complete</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="data_format.choices" Name="data_format" DataType="text" redcap:Variable="data_format">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Character</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="2"><Decode><TranslatedText>Numeric</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="3"><Decode><TranslatedText>Character or Numeric</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="4"><Decode><TranslatedText>YYYY-MM-DD</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="5"><Decode><TranslatedText>YYYY-MM-DD hh:mm</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="variable_required___1.choices" Name="variable_required___1" DataType="boolean" redcap:Variable="variable_required" redcap:CheckboxChoices="1, YES">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Checked</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>Unchecked</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="variable_missingaction___1.choices" Name="variable_missingaction___1" DataType="boolean" redcap:Variable="variable_missingaction" redcap:CheckboxChoices="1, Yes">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Checked</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>Unchecked</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="variable_status.choices" Name="variable_status" DataType="text" redcap:Variable="variable_status">
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>DRAFT (variable under consideration)</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Active</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="2"><Decode><TranslatedText>DEPRECATED (variable retired from use)</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="has_codes.choices" Name="has_codes" DataType="boolean" redcap:Variable="has_codes">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Yes</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>No</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="code_list_ref.choices" Name="code_list_ref" DataType="text" redcap:Variable="code_list_ref">
+		<CodeListItem CodedValue="2"><Decode><TranslatedText>_D_A code (date approximation)</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="26"><Decode><TranslatedText>_NoYes</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="9"><Decode><TranslatedText>_NoYesUnknown</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="41"><Decode><TranslatedText>AA_POS_SUB code</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="33"><Decode><TranslatedText>ABNORM code</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="14"><Decode><TranslatedText>ADULTPED code</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="5"><Decode><TranslatedText>ART_COMB code</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="4"><Decode><TranslatedText>ART_FORM code</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>ART_ID code (ATC drug code)</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="3"><Decode><TranslatedText>ART_RS/MED_RS code</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="6"><Decode><TranslatedText>ARTSTART_RS code</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="24"><Decode><TranslatedText>BP_U code</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="49"><Decode><TranslatedText>CAREGIVER code</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="25"><Decode><TranslatedText>CD4_U code</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="50"><Decode><TranslatedText>CDC_STAGE code</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="11"><Decode><TranslatedText>COUNTRY code (ISO alpha-3)</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="19"><Decode><TranslatedText>DELIV_ASSIST code</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="18"><Decode><TranslatedText>DELIV_LOCATION code</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="17"><Decode><TranslatedText>DELIV_M code</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="20"><Decode><TranslatedText>DIS_ID code</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="23"><Decode><TranslatedText>DIS_OUTCOME code</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="22"><Decode><TranslatedText>DIS_SITE code</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="21"><Decode><TranslatedText>DIS_WD code</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="32"><Decode><TranslatedText>DROP_RS code</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="7"><Decode><TranslatedText>GENDER code</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="54"><Decode><TranslatedText>GENDER_ID code</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="40"><Decode><TranslatedText>GENE code</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="48"><Decode><TranslatedText>HIV_STATUS code</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="10"><Decode><TranslatedText>IeDEA Regions</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="30"><Decode><TranslatedText>LAB_ID code</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="36"><Decode><TranslatedText>LAB_R/VS_R code</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="37"><Decode><TranslatedText>LAB_ST code</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="31"><Decode><TranslatedText>LAB_U code</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="13"><Decode><TranslatedText>LEVEL code</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="34"><Decode><TranslatedText>LOC_CODE code</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="44"><Decode><TranslatedText>MED_FR code</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="27"><Decode><TranslatedText>MED_ID code (ATC drug code)</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="43"><Decode><TranslatedText>MEDSTART_RS code</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="8"><Decode><TranslatedText>MODE code</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="47"><Decode><TranslatedText>OUTCOM code</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="42"><Decode><TranslatedText>RES_SCOR_ID code</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="29"><Decode><TranslatedText>RNA_T code</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="35"><Decode><TranslatedText>ROM_DUR_A code</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="12"><Decode><TranslatedText>RURAL code</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="53"><Decode><TranslatedText>SCHOOL_LVL code</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="52"><Decode><TranslatedText>STATUS_KNOWN code</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="15"><Decode><TranslatedText>SURVEY_INTERNET code</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="16"><Decode><TranslatedText>SURVEY_PAPER code</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="38"><Decode><TranslatedText>TESTTYPE code</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="45"><Decode><TranslatedText>ULTR code</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="39"><Decode><TranslatedText>VIRUSTYPE code</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="28"><Decode><TranslatedText>VS_ID code</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="46"><Decode><TranslatedText>VS_U code</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="51"><Decode><TranslatedText>WHO_STAGE code</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="codes_print.choices" Name="codes_print" DataType="text" redcap:Variable="codes_print">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Yes</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>No</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="variable_metadata_complete.choices" Name="variable_metadata_complete" DataType="text" redcap:Variable="variable_metadata_complete">
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>Incomplete</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Unverified</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="2"><Decode><TranslatedText>Complete</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+</MetaDataVersion>
+</Study>
+</ODM>
