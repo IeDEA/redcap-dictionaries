@@ -2,9 +2,15 @@
 REDCap Data Dictionaries for IeDEA 
 This directory contains REDCap data dictionaries for ongoing IeDEA and Harmonist projects.
 
+These REDCap XML and CSV data dictionaries have been designed for REDCap v8.3 and above and can be used to support data collection and other work with the [IeDEA Data Exchange Standard (IeDEA DES)](http://iedeades.org).
+
+## tblCENTER
+
+tblCENTER (table CENTER) of the IeDEA DES is used to record the list of HIV care and treatment sites contributing data to the IeDEA cohorts.
+
 ## Harmonist Data Model (0A) and Code List Projects (0B)
 
-These REDCap XML data dictionaries can be instantiated on any REDCap installation to create the Data Model and Code List REDCap projects that inform the [IeDEA Data Exchange Standard Website](http://iedeades.org).
+to create the Data Model and Code List REDCap projects that inform the [IeDEA Data Exchange Standard Website](http://iedeades.org).
 
 Please note that for reusability and compatibility with the XML data dictionary format, the `code_list_ref` variable in the **Harmonist0A: Data Model** project is listed as a plain dropdown variable in the XML for the Harmonist 0A project. In this variable, dropdown codes refer to record IDs in the 0B project, and labels refer to the descriptive names of the code lists.
 
